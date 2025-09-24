@@ -3,7 +3,9 @@ const person1 = {
   lastName: "modhar",
   age: 25,
   gender: "male",
-  sayHello: () =>
-    console.log(`Hello, my name is ${person1.firstName} ${person1.lastName}`),
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName}`);
+  },
+   
 };
 person1.sayHello();
